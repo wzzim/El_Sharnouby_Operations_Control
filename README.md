@@ -1,39 +1,3 @@
-Replace your current `README.md` with this:
-
-```md
-# El-Sharnouby Operations Control
-
-<p align="center">
-  <b>AI-powered executive operations platform for the HVIA Task 02 challenge</b>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Stack-FastAPI%20%2B%20Next.js-0ea5e9?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Data-CSV%20Operational%20Model-22c55e?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/UI-Dark%20Executive%20Control%20Room-8b5cf6?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Internship%20Submission-f97316?style=for-the-badge" />
-</p>
-
----
-
-## One-line pitch
-
-**El-Sharnouby Operations Control** turns operational CSV data into executive dashboards, ranked business actions, and an auditable decision workflow for a fashion and textile business.
-
-Instead of only showing charts, the system answers:
-
-> **What should management do next, why, who owns it, and what is the estimated EGP impact?**
-
----
-
-## The business problem
-
-El-Sharnouby Group / Leo Moda operates across multiple connected business areas:
-
-```text
-Suppliers → Materials → Production → Printing → Quality → Inventory → Retail / Online / Wholesale → Customers
-```
-
 The challenge is not simply “make a dashboard.”
 
 The real challenge is connecting the business chain and finding where money, time, stock, and operational performance are being lost.
