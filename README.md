@@ -1,19 +1,52 @@
+# El-Sharnouby Operations Control
+
+<p align="center">
+  <b>AI-powered executive operations platform for the HVIA Task 02 challenge</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Stack-FastAPI%20%2B%20Next.js-0ea5e9?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Data-CSV%20Operational%20Model-22c55e?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/UI-Dark%20Executive%20Control%20Room-8b5cf6?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Internship%20Submission-f97316?style=for-the-badge" />
+</p>
+
+---
+
+## One-line pitch
+
+**El-Sharnouby Operations Control** turns operational CSV data into executive dashboards, ranked business actions, and an auditable decision workflow for a fashion and textile business.
+
+Instead of only showing charts, the system answers:
+
+> **What should management do next, why, who owns it, and what is the estimated EGP impact?**
+
+---
+
+## The business problem
+
+El-Sharnouby Group / Leo Moda operates across multiple connected business areas:
+
+```text
+Suppliers → Materials → Production → Printing → Quality → Inventory → Retail / Online / Wholesale → Customers
+```
+
 The challenge is not simply “make a dashboard.”
 
 The real challenge is connecting the business chain and finding where money, time, stock, and operational performance are being lost.
 
 This project focuses on:
 
-- profit leakage
-- supplier reliability
-- inventory risk
-- dead stock and trapped capital
-- channel performance
-- customer behavior
-- quality losses
-- marketing efficiency
-- production and printing performance
-- executive decision tracking
+- Profit leakage
+- Supplier reliability
+- Inventory risk
+- Dead stock and trapped capital
+- Channel performance
+- Customer behavior
+- Quality losses
+- Marketing efficiency
+- Production and printing performance
+- Executive decision tracking
 
 ---
 
@@ -25,10 +58,10 @@ The platform acts like an internal operations control layer.
 
 It does four things:
 
-1. **Reads operational CSVs**
-2. **Computes business metrics**
-3. **Ranks recommended actions**
-4. **Tracks decisions through an approval workflow**
+1. Reads operational CSVs
+2. Computes business metrics
+3. Ranks recommended actions
+4. Tracks decisions through an approval workflow
 
 The main experience is the **Decision Control Room**, where each recommendation becomes an action card.
 
@@ -336,13 +369,13 @@ The app includes a Data Health page because dashboards can look polished while t
 
 The backend checks things like:
 
-- revenue reconciliation
-- leakage totals
-- decision ID uniqueness
-- mocked/fallback tables
-- row counts
+- Revenue reconciliation
+- Leakage totals
+- Decision ID uniqueness
+- Mocked/fallback tables
+- Row counts
 - NaN-safe API output
-- inventory snapshot logic
+- Inventory snapshot logic
 
 This makes the project more defensible in discussion.
 
@@ -376,14 +409,14 @@ This is not only a BI dashboard.
 
 It combines:
 
-- operational analytics
-- ranked decision recommendations
-- executive storytelling
-- auditability
-- role-based action workflow
-- formula transparency
-- data-health checks
-- scenario thinking
+- Operational analytics
+- Ranked decision recommendations
+- Executive storytelling
+- Auditability
+- Role-based action workflow
+- Formula transparency
+- Data-health checks
+- Scenario thinking
 
 The result is closer to an **operations decision platform** than a normal report.
 
@@ -461,14 +494,14 @@ Limitations:
 
 Future improvements:
 
-- connect to ERP / POS / inventory systems
-- add authentication and real user roles
-- deploy backend and frontend
-- add Product 360 pages
-- add supplier contract data
-- improve forecasting with seasonality and confidence intervals
-- add scenario sliders for management planning
-- add exportable executive PDF reports
+- Connect to ERP / POS / inventory systems
+- Add authentication and real user roles
+- Deploy backend and frontend
+- Add Product 360 pages
+- Add supplier contract data
+- Improve forecasting with seasonality and confidence intervals
+- Add scenario sliders for management planning
+- Add exportable executive PDF reports
 
 ---
 
@@ -481,6 +514,3 @@ Insight → Decision → Action → Audit Trail
 ```
 
 That is the core idea behind **El-Sharnouby Operations Control**.
-```
-
-Use that as the full README.
