@@ -1,0 +1,6 @@
+﻿Product_ID,Product_Name,Material_ID,Material_Name,Required_Per_Unit,Unit,Data_Class
+P001,Summer children's girls-Happy,M001,Single Jersey Cotton 160 GSM,1.04,meter,Modeled BOM for training
+P001,Summer children's girls-Happy,M006,Sewing Thread,0.032,cone,Modeled BOM for training
+P001,Summer children's girls-Happy,M007,Neck Label,1,piece,Modeled BOM for training
+P001,Summer children's girls-Happy,M008,Care Label,1,piece,Modeled BOM for training
+P001,Summer children's girls-Happy,M009,Poly Bag,1,piece,Modeled BOM for training

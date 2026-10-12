@@ -1,0 +1,6 @@
+﻿Table,Grain,Purpose,Real_vs_Modeled
+Product_Master.csv,1 row per public product,Public product catalog master and public retail price,Public/verified master data
+Business_Units.csv,1 row per company business unit,Group structure and public capacity facts,Public/verified facts
+Locations.csv,1 row per channel / operating location,"Retail, online, wholesale, HQ and factory context",Public facts where available; exact factory address not asserted
+Customers.csv,1 row per anonymized customer ID,Customer segmentation / retention / RFM,Modeled/anonymized training data
+Sales_Transactions.csv,1 row per invoice line,"Sales, margin, returns, channel and product analysis",Modeled transactions anchored to public products/prices

@@ -1,0 +1,6 @@
+﻿QC_ID,Inspection_Date,Product_ID,Product_Name,Stage,Inspected_Qty,Passed_Qty,Rejected_Qty,Defect_Type,Root_Cause,Estimated_Loss_EGP,Data_Class
+QC000001,2026-03-09,P049,Fuchsia - طقم تيشيرت وشورت اطفال صيفي,Fabric,40,39,1,None,No significant issue,239.99,Modeled QC inspection
+QC000002,2025-09-21,P027,Girls' pajamas - I'm Just a girl,Finishing,629,613,16,Color Misalignment,Operator method,1689.62,Modeled QC inspection
+QC000003,2024-08-21,P008,Summer children's boys-SpongeBob,Finishing,577,553,24,Print Cracking,No significant issue,4343.01,Modeled QC inspection
+QC000004,2024-04-10,P006,Summer children's boys-Sonic,Cutting,732,707,25,Size Variance,Machine calibration,4912.69,Modeled QC inspection
+QC000005,2024-05-18,P050,Yellow - طقم تيشيرت وشورت اطفال صيفي,Final,189,186,3,Ink Smudge,Material variation,730.95,Modeled QC inspection

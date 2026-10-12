@@ -1,0 +1,6 @@
+﻿Print_Batch_ID,Product_ID,Product_Name,Print_Date,Print_Type,Machine_ID,Planned_Qty,Printed_Qty,Good_Qty,Rejected_Qty,Reprint_Qty,Defect_Type,Ink_or_Consumable_Cost_EGP,Rework_Cost_EGP,Data_Class
+PR00001,P015,Girls' summer pajamas-Stay cool,2023-10-29,Digital,PR-M02,3240,3119,3055,64,31,None,12570.15,178.57,Modeled print operation
+PR00002,P051,Ice cream - بيجامة حريمي صيفي2024,2025-05-13,Water-Based,PR-M02,949,926,882,44,31,Curing,6152.74,244.02,Modeled print operation
+PR00003,P015,Girls' summer pajamas-Stay cool,2025-07-20,Heat Transfer,PR-M05,5242,5185,5007,178,81,Curing,24019.22,375.21,Modeled print operation
+PR00004,P037,Girls' sweatshirt-Flower,2023-12-14,Heat Transfer,PR-M04,4682,4582,4495,87,73,None,24506.5,552.16,Modeled print operation
+PR00005,P043,Girls' autumn pajamas-Snow White,2023-12-11,Digital,PR-M03,5480,5521,5444,77,68,Registration,15642.27,425.81,Modeled print operation

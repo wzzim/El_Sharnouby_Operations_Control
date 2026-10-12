@@ -1,0 +1,6 @@
+﻿PO_ID,Order_Date,Supplier_ID,Material_ID,Material_Name,Unit,Ordered_Qty,Unit_Cost_EGP,Promised_Date,Actual_Receipt_Date,Accepted_Qty,Rejected_Qty,Data_Class
+MPO00001,2025-02-02,SUP04,M010,Carton Box,piece,3880,8.07,2025-02-16,2025-02-21,3777,103,Modeled procurement / supplier performance
+MPO00002,2025-10-18,SUP07,M001,Single Jersey Cotton 160 GSM,meter,1332,85.55,2025-10-23,2025-10-23,1309,23,Modeled procurement / supplier performance
+MPO00003,2024-02-17,SUP04,M012,Heat Transfer Film,sheet,13868,10.79,2024-02-24,2024-02-24,13582,286,Modeled procurement / supplier performance
+MPO00004,2024-08-24,SUP03,M011,Water-Based Ink,kg,5474,315.44,2024-09-07,2024-09-10,5329,145,Modeled procurement / supplier performance
+MPO00005,2026-04-08,SUP08,M004,Summer Melton,meter,4501,114.01,2026-04-13,2026-04-13,4429,72,Modeled procurement / supplier performance

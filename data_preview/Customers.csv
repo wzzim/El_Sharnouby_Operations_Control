@@ -1,0 +1,6 @@
+﻿Customer_ID,Customer_Type,Governorate,Age_Band,Gender,Join_Date,Acquisition_Channel,Consent_Status,Data_Class
+C00001,Retail,Dakahlia,45-54,Male,2026-02-22,Organic Social,Not opted-in,Modeled/anonymized training customer - not actual personal data
+C00002,Retail,Beheira,35-44,Male,2024-09-30,Direct / WhatsApp,Opted-in,Modeled/anonymized training customer - not actual personal data
+C00003,Retail,Dakahlia,25-34,Female,2025-06-27,Organic Social,Opted-in,Modeled/anonymized training customer - not actual personal data
+C00004,Wholesale,Port Said,Business,Business,2024-09-27,Wholesale Sales,Opted-in,Modeled/anonymized training customer - not actual personal data
+C00005,Retail,Gharbia,55+,Female,2025-02-07,Paid Social,Not opted-in,Modeled/anonymized training customer - not actual personal data

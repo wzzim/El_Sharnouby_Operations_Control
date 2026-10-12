@@ -1,0 +1,6 @@
+﻿Production_Order_ID,Product_ID,Product_Name,Start_Date,Due_Date,Completion_Date,Planned_Qty,Produced_Qty,Good_Qty,Rejected_Qty,Line_ID,Efficiency_Pct,Delay_Days,Primary_Bottleneck,Overtime_Hours,Data_Class
+PO00001,P035,Girls' sweatshirt-Fuchsia,2025-11-11,2025-11-22,2025-11-22,1228,1140,1124,16,LINE-05,81.1,0,None,4.5,Modeled factory production order
+PO00002,P055,Scooby-Doo - بيجامة حريمي صيفي2024,2025-09-01,2025-09-19,2025-09-19,1215,1215,1185,30,LINE-04,89.7,0,None,0.5,Modeled factory production order
+PO00003,P001,Summer children's girls-Happy,2025-03-22,2025-04-08,2025-04-15,613,580,562,18,LINE-04,86.5,7,Finishing,14.7,Modeled factory production order
+PO00004,P001,Summer children's girls-Happy,2024-05-06,2024-05-22,2024-05-22,4533,3640,3557,83,LINE-03,72.2,0,None,3.6,Modeled factory production order
+PO00005,P045,Girls' autumn pajamas-Stitch,2025-08-08,2025-08-22,2025-08-22,987,756,746,10,LINE-02,72.5,0,None,13.6,Modeled factory production order

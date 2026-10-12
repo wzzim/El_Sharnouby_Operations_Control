@@ -1,0 +1,6 @@
+﻿Snapshot_Month,Location_ID,Location_Name,Product_ID,SKU,Product_Name,Opening_Stock,Received_Qty,Sold_Qty,Returned_Qty,Damaged_Qty,Closing_Stock,Avg_Daily_Sales_90D,Safety_Stock_Units,Reorder_Point_Units,Supplier_Lead_Time_Days,Days_of_Cover,Stockout_Days_In_Month,Data_Class
+2023-10-01,LOC001,LEO MODA - Sidi Bishr Store,P001,26115-8,Summer children's girls-Happy,176,39,42,3,0,176,1.38,5,12,5,127.5,0,Modeled inventory history - no forecast columns provided
+2023-11-01,LOC001,LEO MODA - Sidi Bishr Store,P001,26115-8,Summer children's girls-Happy,176,65,62,4,1,182,1.71,23,59,21,106.4,0,Modeled inventory history - no forecast columns provided
+2023-12-01,LOC001,LEO MODA - Sidi Bishr Store,P001,26115-8,Summer children's girls-Happy,182,54,61,1,1,175,1.81,25,63,21,96.7,0,Modeled inventory history - no forecast columns provided
+2024-01-01,LOC001,LEO MODA - Sidi Bishr Store,P001,26115-8,Summer children's girls-Happy,175,35,42,1,0,169,1.81,12,30,10,93.4,0,Modeled inventory history - no forecast columns provided
+2024-02-01,LOC001,LEO MODA - Sidi Bishr Store,P001,26115-8,Summer children's girls-Happy,169,28,31,1,0,167,1.47,7,17,7,113.6,0,Modeled inventory history - no forecast columns provided

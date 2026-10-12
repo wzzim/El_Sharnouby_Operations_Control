@@ -1,0 +1,6 @@
+﻿Downtime_ID,Date,Machine_ID,Business_Area,Downtime_Hours,Reason,Planned,Data_Class
+DT00001,2025-05-21,CUT-01,Cutting,0.7,Planned maintenance,Yes,Modeled equipment event
+DT00002,2026-02-14,PR-M03,Printing,0.8,Setup / changeover,No,Modeled equipment event
+DT00003,2024-04-11,PR-M04,Printing,11.7,Setup / changeover,No,Modeled equipment event
+DT00004,2026-01-16,PR-M01,Printing,0.7,Planned maintenance,Yes,Modeled equipment event
+DT00005,2024-10-06,SEW-L01,Sewing,2.5,Material wait,No,Modeled equipment event

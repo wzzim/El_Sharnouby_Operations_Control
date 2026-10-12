@@ -1,0 +1,6 @@
+﻿Month,Business_Unit,Primary_KPI,Volume,Operational_Efficiency_Pct,Open_Issues_Count,Data_Class
+2023-10-01,LEO DESIGN,Designs_Completed,48,85.1,2,Modeled monthly operational summary using public business-unit structure
+2023-10-01,LEO TEX,Fabric_Meters,129278,91.5,6,Modeled monthly operational summary using public business-unit structure
+2023-10-01,LEO PRODUCTION HUB,Garments_Produced,78490,88.5,9,Modeled monthly operational summary using public business-unit structure
+2023-10-01,LEO PRINT,Print_Units,70454,86.7,1,Modeled monthly operational summary using public business-unit structure
+2023-10-01,LEO MODA,Sales_Units,36484,87.6,1,Modeled monthly operational summary using public business-unit structure
