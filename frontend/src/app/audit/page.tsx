@@ -21,11 +21,11 @@ export default function AuditPage() {
       {api.error && <ErrorState message={api.error} retry={api.retry} />}
       {api.loading ? <SkeletonBlock className="h-80" /> : events.length === 0 ? (
         <section className="grid gap-4 lg:grid-cols-[1fr_360px]">
-          <EmptyState title="No audit events yet" body="Approve, defer, or start a Control Room card to create an audit entry. This is expected before you interact with the board." />
+          <EmptyState title="No audit events yet" body="Approve, defer, or start a War Room card to create an audit entry. This is expected before you interact with the board." />
           <div className="rounded-3xl border border-cyan-400/20 bg-cyan-400/10 p-6">
             <Clock3 className="h-8 w-8 text-cyan-200" />
             <h2 className="mt-4 text-xl font-black text-white">How to create one</h2>
-            <p className="mt-2 text-sm leading-6 text-cyan-50/80">Go to Decision Control Room → click Approve / Defer / Start → confirm the modal. The backend writes the transition to SQLite and it appears here.</p>
+            <p className="mt-2 text-sm leading-6 text-cyan-50/80">Go to Decision War Room → click Approve / Defer / Start → confirm the modal. The backend writes the transition to SQLite and it appears here.</p>
           </div>
         </section>
       ) : (

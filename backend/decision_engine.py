@@ -11,7 +11,7 @@ import pandas as pd
 
 class DecisionEngine:
     """
-    El-Sharnouby Decision Control Room Engine
+    El-Sharnouby Decision War Room Engine
 
     - Loads the 20 CSVs from ../data (Survival Protocol: never crashes, falls back to mock per table)
     - Uses ONLY the latest inventory snapshot for stock-on-hand (history is monthly)
@@ -868,7 +868,7 @@ class DecisionEngine:
                if leak["primary_driver"] else "Leakage could not be computed from the available data.")
         )
         return self._clean_json({
-            "company": "El-Sharnouby Group", "platform_name": "Decision Control Room",
+            "company": "El-Sharnouby Group", "platform_name": "Decision War Room",
             "generated_at": datetime.now().isoformat(timespec="seconds"),
             "data_as_of": self.data_as_of, "using_mock_data": self.using_mock_data,
             "mocked_tables": sorted(self.mocked),
@@ -984,7 +984,7 @@ class DecisionEngine:
 
     def health(self) -> Dict[str, Any]:
         return self._clean_json({
-            "status": "ok", "service": "El-Sharnouby Operations Control API",
+            "status": "ok", "service": "El-Sharnouby Decision Intelligence API",
             "csv_loaded": not self.using_mock_data, "using_mock_data": self.using_mock_data,
             "mocked_tables": sorted(self.mocked), "tables_loaded": len(self.tables),
             "loaded_at": self.loaded_at, "data_as_of": self.data_as_of,

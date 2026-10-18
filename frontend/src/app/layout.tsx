@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "El-Sharnouby Operations Control",
+  title: "El-Sharnouby Ops Intelligence",
   description: "Executive operations AI platform for El-Sharnouby Group / Leo Moda.",
 };
 

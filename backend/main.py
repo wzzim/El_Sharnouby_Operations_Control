@@ -1,4 +1,4 @@
-from typing import Literal
+from typing import Literal, List, Dict
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -7,9 +7,11 @@ from pydantic import BaseModel
 from decision_engine import DecisionEngine
 from store import Store
 from analytics import AnalyticsService
+from ai import AIService
+
 
 app = FastAPI(
-    title="El-Sharnouby Decision Control Room API",
+    title="El-Sharnouby Decision War Room API",
     description="Decision intelligence API: ranked actions, profit leakage, supply readiness, audit trail.",
     version="2.0.0",
 )
@@ -56,6 +58,18 @@ class ScenarioRequest(BaseModel):
     discount_cap_pct: float = 15.0
     markdown_pct: float = 15.0
 
+class AIChatRequest(BaseModel):
+    question: str
+    history: List[Dict[str, str]] = []
+
+class AIRootCauseRequest(BaseModel):
+    problem: str
+    history: List[Dict[str, str]] = []
+
+class AIActionAdvisorRequest(BaseModel):
+    focus: str = "What should management prioritize next?"
+    history: List[Dict[str, str]] = []
+
 
 def _board():
     states = store.states()
@@ -70,10 +84,15 @@ def _board():
         })
     return items
 
+ai_service = AIService(
+    engine=engine,
+    analytics=analytics,
+    board_provider=_board,
+)
 
 @app.get("/")
 def root():
-    return {"message": "El-Sharnouby Decision Control Room API", "docs": "/docs", "health": "/health"}
+    return {"message": "El-Sharnouby Decision War Room API", "docs": "/docs", "health": "/health"}
 
 
 @app.get("/health")
@@ -212,8 +231,54 @@ def method():
 def scenario(body: ScenarioRequest):
     return analytics.scenario(body.discount_cap_pct, body.markdown_pct)
 
+@app.get("/api/ai/status")
+def ai_status():
+    return ai_service.status()
 
+
+@app.post("/api/ai/chat")
+def ai_chat(body: AIChatRequest):
+    question = body.question.strip()
+
+    if not question:
+        raise HTTPException(400, "Question cannot be empty")
+
+    if len(question) > 1000:
+        raise HTTPException(400, "Question is too long")
+
+    try:
+        return ai_service.chat(question, body.history)
+    except RuntimeError as exc:
+        raise HTTPException(503, str(exc))
+
+@app.post("/api/ai/root-cause")
+def ai_root_cause(body: AIRootCauseRequest):
+    problem = body.problem.strip()
+
+    if not problem:
+        raise HTTPException(400, "Problem cannot be empty")
+
+    try:
+        return ai_service.root_cause(problem, body.history)
+    except RuntimeError as exc:
+        raise HTTPException(503, str(exc))
+
+
+@app.post("/api/ai/action-advisor")
+def ai_action_advisor(body: AIActionAdvisorRequest):
+    focus = body.focus.strip()
+
+    if not focus:
+        raise HTTPException(400, "Focus cannot be empty")
+
+    try:
+        return ai_service.action_advisor(focus, body.history)
+    except RuntimeError as exc:
+        raise HTTPException(503, str(exc))
+    
 @app.post("/api/reload")
+
+
 def reload_data():
     """Re-read the CSVs and rebuild decisions (decision states are kept)."""
     engine.refresh()

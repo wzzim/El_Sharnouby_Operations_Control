@@ -274,7 +274,7 @@ export default function WarRoomPage() {
   return (
     <AppShell>
       <PageHeader
-        title="Decision Control Room"
+        title="Decision Execution Room"
         question="Which AI recommendations should executives approve, defer, or start executing?"
         insight={`${filtered.length} decisions shown after filters. All status changes require confirmation and are posted to the backend audit trail.`}
       />

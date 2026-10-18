@@ -33,7 +33,7 @@ import { egp, priorityClass } from "@/lib/format";
 
 export const ROLE_STORAGE_KEY = "elsharnouby-ops-role";
 
-const PRODUCT_NAME = "El-Sharnouby Operations Control";
+const PRODUCT_NAME = "El-Sharnouby Ops Intelligence";
 const PRODUCT_SUBTITLE = "Executive Operations AI";
 
 type NavItem = {
@@ -44,17 +44,34 @@ type NavItem = {
 };
 
 const navGroups: Array<{ label: string; items: NavItem[] }> = [
-  {
-    label: "Command",
-    items: [
-      { label: "Command Center", href: "/", icon: <LayoutDashboard className="h-4 w-4" />, helper: "Revenue, margin, channels, urgent actions" },
-      { label: "Executive Story", href: "/story", icon: <BookOpen className="h-4 w-4" />, helper: "Seven-step CEO narrative" },
+{
+  label: "Command",
+  items: [
+      {
+      label: "Command Center",
+      href: "/",
+      icon: <LayoutDashboard className="h-4 w-4" />,
+      helper: "Revenue, margin, channels, urgent actions",
+      },
+      {
+      label: "AI Analyst",
+      href: "/ai-analyst",
+      icon: <Sparkles className="h-4 w-4" />,
+      helper: "Ask, investigate, and prioritize",
+      },
+      {
+      label: "Executive Story",
+      href: "/story",
+      icon: <BookOpen className="h-4 w-4" />,
+      helper: "Seven-step CEO narrative",
+      },
     ],
   },
+
   {
     label: "Workspaces",
     items: [
-      { label: "Decision Control Room", href: "/war-room", icon: <Workflow className="h-4 w-4" />, helper: "Approve, defer, and start actions" },
+      { label: "Decision Execution Room", href: "/war-room", icon: <Workflow className="h-4 w-4" />, helper: "Approve, defer, and start actions" },
       { label: "Action Center", href: "/action-center", icon: <ClipboardCheck className="h-4 w-4" />, helper: "Department ownership" },
       { label: "Time Machine", href: "/audit", icon: <Activity className="h-4 w-4" />, helper: "Audit trail" },
     ],
@@ -287,7 +304,7 @@ export function PageHeader({
       <div className="flex flex-col justify-between gap-4 lg:flex-row lg:items-end">
         <div>
           <p className="mb-2 inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-cyan-200">
-            Operations Control Layer
+            Ops Intelligence Layer
           </p>
           <h1 className="text-3xl font-black tracking-tight text-white md:text-5xl">{title}</h1>
           <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-400">{question}</p>

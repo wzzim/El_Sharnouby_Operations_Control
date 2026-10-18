@@ -1,15 +1,11 @@
 # El-Sharnouby Operations Control
 
-<p align="center">
-  <b>AI-powered executive operations platform for the HVIA Task 02 challenge</b>
-</p>
+AI-powered executive operations platform for the HVIA Task 02 challenge
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Stack-FastAPI%20%2B%20Next.js-0ea5e9?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Data-CSV%20Operational%20Model-22c55e?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/UI-Dark%20Executive%20Control%20Room-8b5cf6?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Internship%20Submission-f97316?style=for-the-badge" />
-</p>
+![Stack](https://img.shields.io/badge/Stack-FastAPI%20%2B%20Next.js-0ea5e9?style=for-the-badge)
+![Data](https://img.shields.io/badge/Data-CSV%20Operational%20Model-22c55e?style=for-the-badge)
+![UI](https://img.shields.io/badge/UI-Dark%20Executive%20Control%20Room-8b5cf6?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Internship%20Submission-f97316?style=for-the-badge)
 
 ---
 
@@ -79,7 +75,7 @@ Reason: Late or rejected deliveries disrupt production and inflate material cost
 ## Main modules
 
 | Module | Purpose |
-|---|---|
+| --- | --- |
 | **Command Center** | Executive overview of revenue, margin, trapped capital, stockout risk, trends, and top actions |
 | **Decision Control Room** | Kanban workflow for AI-ranked decisions: awaiting, deferred, approved, in progress |
 | **Action Center** | Groups recommended actions by owner and department |
@@ -158,7 +154,7 @@ flowchart TD
 ## Tech stack
 
 | Layer | Tools |
-|---|---|
+| --- | --- |
 | **Frontend** | Next.js 14, React, TypeScript, Tailwind CSS |
 | **Charts / UI** | Recharts, lucide-react, custom dark SaaS components |
 | **Backend** | FastAPI, Python |
@@ -341,7 +337,7 @@ env NEXT_PUBLIC_API_URL=http://localhost:8001 npm run dev
 ## API overview
 
 | Endpoint | Purpose |
-|---|---|
+| --- | --- |
 | `/api/overview` | Executive KPIs |
 | `/api/dashboard` | Command Center data |
 | `/api/decisions` | Ranked decisions for the control room |
@@ -392,7 +388,7 @@ Metric = formula + source table + assumption + modeled/recorded label
 Examples:
 
 | Metric | Example formula |
-|---|---|
+| --- | --- |
 | Gross margin | gross profit / net sales |
 | Stockout exposure | stockout days × avg daily sales × unit gross profit |
 | Discount leakage | retail/online gross sales × excess discount above cap |

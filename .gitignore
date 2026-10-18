@@ -1,0 +1,11 @@
+data/
+backend/.venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/.pytest_cache/
+backend/warroom.db
+*.pyc
+frontend/node_modules/
+frontend/.next/
+frontend/tsconfig.tsbuildinfo
+.DS_Store
